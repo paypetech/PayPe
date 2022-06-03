@@ -97,7 +97,7 @@ body {
   font-family: "OpenSans-Regular";
   font-size: 18px;
   color: #666666;
-  padding: 5px 15px !important;
+  padding: 0px 15px !important;
   text-transform: uppercase;
 }
 #gtco-main-nav form a {
@@ -802,4 +802,12 @@ color: #666666;
   #gtco-footer .col-lg-6 {
     margin-bottom: 50px;
   }
+}
+.dropdown:hover>.dropdown-menu {
+  display: block
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
 }
