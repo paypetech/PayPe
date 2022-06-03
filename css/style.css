@@ -97,7 +97,7 @@ body {
   font-family: "OpenSans-Regular";
   font-size: 18px;
   color: #666666;
-  padding: 5px 15px !important;
+  padding: 0amplify configurepx 15px !important;
   text-transform: uppercase;
 }
 #gtco-main-nav form a {
@@ -107,6 +107,8 @@ body {
   padding: 5px 25px;
   border-radius: 20px;
   border-width: 2px;
+
+  
 }
 #gtco-main-nav form a.btn-info {
   background: #01e6f8;
@@ -802,4 +804,12 @@ color: #666666;
   #gtco-footer .col-lg-6 {
     margin-bottom: 50px;
   }
+}
+.dropdown:hover>.dropdown-menu {
+  display: block
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
 }
